@@ -15,7 +15,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -99,184 +98,237 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Begin Header Styles */
-
-header{
-  background-color: #93DFCB;
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
+body{
+  overflow-x: hidden;
 }
-
-.navbar{
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.navbar a{
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
-  margin: 6px;
-  text-decoration: none;
-}
-
-.navbar a:hover{
-  color: #fff;
-}
-
-.mobile_nav_icon{
-  display: none;
-}
-
-/* End Header Styles */
 
 /* Begin Hero Section */
 
+.navbar a{
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  text-decoration: none;
+}
+
+.navbar{
+  text-align: right;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+}
+
+.navbar a:hover{
+  opacity: 0.5;
+}
+
+.logo {
+  padding-top: 5%;
+  position: absolute;
+  padding-right: 30px;
+  padding-top: -30px;
+  right: 0;
+}
+
 .hero{
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  background-image: url('../img/MyBackgroundImage.jpg');
-  background-position: center;
+  background-image: url('../img/hero_image.png');
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: none;
-}
-
-.hero_cta h1{
-  text-align: center;
-}
-
-.hero_cta h1{
-  font-size: 50px;
-  color: #fff;
-  font-weight: 400;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* End Hero Section */
 
-/* Begin CTA Section */
+/* Begin Bio Section */
 
-.CTA_section{
-  background-color: #EEF5EA;
+.bio{
+  background-color: #101010;
+  display: flex;
+}
+
+.sectionbox_bio{
+  justify-content: space-between;
+  margin: 0 auto;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+
+#biohead{
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.bioimage{
+  margin-left: 0px;
+  clip-path: ellipse(76% 50% at 0% 50%);
+  float: left;
+  margin-right: 10px;
+  width: 800px;
+  height: 800px;
+}
+
+/* End Bio Section */
+
+/* Begin Tour Section */
+
+.tour{
+  background-color: #B60124;
   padding: 10px;
+  padding-bottom: 80px;
+  width: 100%;
+  position: relative;
+  height: 2500px;
 }
 
 .sectionbox{
-  width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 auto;
+  width: 80%;
+  margin: auto;
 }
 
-#CTA1,
-#CTA2,
-#CTA3{
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 10px;
-}
-
-/* End CTA Section */
-
-/* Begin Leadership Section */
-
-.leadership_section{
-  background-color: #FBFFFE;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.sectionbox_leadership h2{
-  text-shadow: 2px 2px #dadada
-}
-
-.asterik_img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.title{
+#tourhead{
+  font-size: 70px;
   font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
 }
 
-/* End Leadership Section */
+#tour2,
+#tour3,
+#tour4,
+#tour5,
+#tour6,
+#tour7,
+#tour8{
+  border-bottom: 10px solid #CC4F6D;
+}
 
-/* Begin Info Section */
+#tour1,
+#tour9{
+  border-bottom: 10px solid #CC4F6D;
+  border-top: 10px solid #CC4F6D;
+}
 
-.info_section{
-  background-color: #FCFFFB;
+#tour10,
+#tour11,
+#tour12{
+  border-bottom: 10px solid #CC4F6D;
+}
+
+.sectionbox_tour1-8{
+  justify-content: space-between;
+  padding-left: 10%;
+  margin: 0 auto;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  position: relative;
+}
+
+.sectionbox_tour9-12{
+  justify-content: space-between;
+  padding-right: 10%;
+  display: inline-block;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  right: 20px;
+  position: absolute;
+}
+
+.sectionbox_tour9-10{
+  right: 0px;
+  width: 300px;
+  padding: 10%;
+}
+
+.tourimage{
+  clip-path: ellipse(76% 50% at 100% 50%);
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 500px;
+  height: 1000px;
+  width: 275%;
+}
+
+.sectionbox_tour11-12{
+  right: 0px;
+  width: 300px;
+  padding: 10%;
+}
+
+/* End Tour Section */
+
+/* Begin Reviews Section */
+
+.reviews{
+  background-color: #101010;
   padding: 10px;
 }
 
-.buffer{
-  margin: 2rem;
-}
-
-/* End Info Section */
-
-/* Begin Footer */
-
-footer{
-  background-color: #93DFCB;
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-footer p{
+#reviewhead{
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
   color: #fff;
-  font-size: 26px;
-  font-weight: 300;
+  font-family: 'Source sans pro', sans-serif;
 }
 
-/* End Footer */
-
-@media screen and (max-width: 768px){
-
-  .sectionbox{
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .buffer p{
-    text-align: center;
-  }
-
-  .buffer h2{
-    text-align: center;
-  }
-
-  .mobile_nav_icon{
-    display: block;
-    font-size: 30px;
-  }
-
-  nav{
-    display: none;
-  }
-
+.sectionbox{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
 }
+
+.reviewimage{
+  position: absolute;
+  right: 0;
+  clip-path: ellipse(76% 50% at 0% 50%);
+}
+
+/* End Reviews Section */
+
+/* Begin Footer Section */
+
+.footer{
+  background-color: #B60124;
+  padding: 10px;
+}
+
+.sectionbox_footer{
+  width: 80%;
+  justify-content: space-between;
+  display: table-row;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Source sans pro', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* End Footer Section */
 
 /* ==========================================================================
    Helper classes

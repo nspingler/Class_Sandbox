@@ -1,2 +1,2 @@
-# Class_Sandbox
-This is our class demo project.
+# Web1_MusicProject
+Demo for class
